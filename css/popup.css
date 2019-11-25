@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+tfoot {
+    font-size: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #98CD98;
+    color: #234C23;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a.friendlyname {
+    color: #234C23;
+    font-weight: bold;
+}
+
+a.friendlyname:hover {
+    text-decoration: none;
+}
+
+a .label {
+    margin-right: 0.5em;
+}
+
+a.friendlyname,
+td.alltimeuptimeratio,
+td.responsetime {
+    font-family: 'Consolas', monospace;
+}
+
+td.status {}
+
+.container-fluid {
+    padding: 3px;
+}
+
+#table {
+    margin: 0;
+}
+
+#table th:first-child {
+    text-align: left;
+}
+
+.url {
+    color: black;
+    font-size: x-small;
+    font-weight: normal;
+}
+
+.text-middle {
+    vertical-align: middle !important;
+}
+
+.loading {
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

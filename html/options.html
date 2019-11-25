@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Majestic Uptime Mech Overlord Zero Suit RX-0</title>
+	<meta charset="utf-8">
+	<link href="/css/libs/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/options.css" rel="stylesheet">
+	<script defer src="/js/options.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<fieldset>
+			<legend>Options</legend>
+			<form autocomplete="off">
+				<div class="form-group">
+					<label for="accountSpecificAPIKey" data-label="Account-Specific API Key">Main API Key</label>
+					<div class="small">Your Main API Key can be found under <a href="https://uptimerobot.com/dashboard#mySettings" target="_blank">My Settings</a> in your Uptime Robot dashboard</div>
+					<br>
+					<input type="text" class="form-control" id="accountSpecificAPIKey" required autofocus>
+				</div>
+				<div class="form-group">
+					<label for="monitorInterval">Monitor Interval (in minutes)</label>
+					<br>
+					<input type="number" class="form-control" id="monitorInterval" required min="1">
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="alltimeuptimeratio"> Show all time uptime ratio
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="responsetime"> Show response time
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="logo"> Show logo
+					</label>
+				</div>
+				<button type="submit" id="btnSave" class="btn btn-primary">Save</button>
+				<button type="button" id="btnReset" class="btn btn-default">Reset</button>
+				<div id="status" class="alert alert-success" role="alert">Options Saved!</div>
+			</form>
+		</fieldset>
+	</div>
+</body>
+
+</html>
